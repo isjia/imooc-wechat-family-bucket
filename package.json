@@ -1,0 +1,26 @@
+{
+  "name": "imooc-wechat-family-bucket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "notebook": "gitbook serve ./note ./gh-pages",
+    "buildNote": "gitbook build ./note ./gh-pages",
+    "deployNote": "node ./scripts/deploy-gh-pages.js",
+    "publish": "npm run buildNote && npm run deployNote"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isjia/imooc-wechat-family-bucket.git"
+  },
+  "author": "isjia@163.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/isjia/imooc-wechat-family-bucket/issues"
+  },
+  "homepage": "https://github.com/isjia/imooc-wechat-family-bucket#readme",
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
+  }
+}
